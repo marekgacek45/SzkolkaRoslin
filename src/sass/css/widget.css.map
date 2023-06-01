@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../components/widget.scss","../utilities/_colors.scss","../utilities/_mixins.scss"],"names":[],"mappings":"AAGA;EACI;EACA;EACA;EACA;EACA;EACA;EACA,kBCJI;EDKJ;EAEA;EACA;EACA;;AACA;EACI;EACA;EACA;;AAEA;EACI;;AEZN;EFWE;IAGQ;;;;AAMhB;EACI;EACA","file":"widget.css"}

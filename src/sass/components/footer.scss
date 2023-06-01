@@ -1,0 +1,32 @@
+@use '../utilities/colors';
+
+
+.footer{
+    
+    text-align: center;
+    padding: 1em;
+    background: colors.$bgc-nav;
+    bottom: 0;
+    // position: absolute;
+    // bottom: 0;
+    // width: 100%;
+    // z-index: 20;
+    
+    &__support{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;
+
+        & img{
+            width: 40px;
+            margin-left: 1em;
+        }
+    }
+}
+.author{
+    margin-top: 1em;
+    a{
+        color: rebeccapurple;
+    }
+}

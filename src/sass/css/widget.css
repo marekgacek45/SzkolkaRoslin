@@ -1,0 +1,31 @@
+.widget {
+  position: absolute;
+  position: fixed;
+  top: 20%;
+  right: -180px;
+  transition: all 0.6s;
+  display: flex;
+  background-color: #84BD00;
+  opacity: 0.6;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 100000;
+}
+.widget__left {
+  height: 100%;
+  width: 100%;
+  padding: 0.5em;
+}
+.widget__left-icon {
+  font-size: 1.4rem;
+}
+@media (min-width: 992px) {
+  .widget__left-icon {
+    font-size: 2rem;
+  }
+}
+
+.widget:hover {
+  right: 0;
+  opacity: 1;
+}/*# sourceMappingURL=widget.css.map */

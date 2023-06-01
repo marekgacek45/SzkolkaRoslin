@@ -1,0 +1,23 @@
+.footer {
+  text-align: center;
+  padding: 1em;
+  background: #E0D9CE;
+  bottom: 0;
+}
+.footer__support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.footer__support img {
+  width: 40px;
+  margin-left: 1em;
+}
+
+.author {
+  margin-top: 1em;
+}
+.author a {
+  color: rebeccapurple;
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,114 @@
+@use '../utilities/colors';
+@use '../utilities/mixins';
+
+.offer {
+	color: colors.$light-font;
+    & h2{
+        margin-bottom: 1em;
+    }
+	&__box {
+        margin-bottom: 5em;
+        border: 1px solid white;
+        box-shadow: 2px 2px 5px white;
+        background-color: colors.$bgc-nav;
+        color: colors.$dark-font;
+        border-radius: 6px;
+        &--last{
+            margin-bottom: 0;
+        }
+		&--top {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-top: 2em;
+            margin-bottom: 1em;
+			@include mixins.medium-devices {
+				flex-direction: row;
+			}
+		}
+		&--bottom {
+			display: none;
+            @include mixins.small-devices {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                margin-top: 1em;
+                padding: 2em;
+                padding-top: 0;
+                
+            }
+
+			& img {
+				width: 100%;
+                max-width:100px;
+                @include mixins.medium-devices {
+                    max-width:130px;
+                    
+                }
+
+			}
+		}
+		&-img {
+			@include mixins.medium-devices {
+				width: 50%;
+				padding-bottom: 0;
+				padding-right: 2em;
+			}
+			& img {
+				width: 100%;
+
+				max-width: 150px;
+				border-radius: 6px;
+				@include mixins.medium-devices {
+					max-width: 200px;
+				}
+			}
+			&--order {
+				@include mixins.medium-devices {
+					order: 1;
+				}
+			}
+		}
+		&-text {
+          
+			padding: 1em;
+
+			& h3 {
+				font-size: 1.6rem;
+			}
+			& ul {
+               
+				list-style: none;
+			}
+			& li {
+                
+				margin: 0.5em;
+                & i{
+                    margin-right: 1em;
+                    font-size: 1.4rem;
+                }
+				& span {
+					font-weight: bold;
+				}
+			}
+			@include mixins.medium-devices {
+				width: 50%;
+			}
+		}
+	}
+}
+
+
+.separator{
+    margin-bottom: 1em;
+}
+
+.variants{
+    display: none;
+    @include mixins.small-devices {
+        display: inline-block;
+        text-decoration: underline;
+
+    }
+}

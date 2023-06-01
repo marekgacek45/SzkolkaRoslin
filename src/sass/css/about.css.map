@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../pages/about.scss","../utilities/_colors.scss","../utilities/_mixins.scss"],"names":[],"mappings":"AAGA;EACI,OCDS;;ADEZ;EACO;EACA;EACA;EACA;EACA;;AEHF;EFFL;IAOW;;;AAGV;EACU;EACA;;AEVN;EFQJ;IAIc;IACD;IACA;;;AAEH;EACI;EAEA;EACA;;AEpBV;EFgBM;IAMQ;;;AEtBd;EF0BM;IAEQ;;;AAKlB;EACU;;AACA;EACI;EACA;;AErCV;EFiCJ;IAOc","file":"about.css"}

@@ -1,0 +1,55 @@
+@use '../utilities/colors';
+@use '../utilities/mixins';
+
+.about {
+    color: colors.$light-font;
+	&__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2em 0;
+        @include mixins.medium-devices {
+            flex-direction: row;
+
+        }
+		&-img {
+            padding-bottom: 1em;
+            margin: 1em;
+            @include mixins.medium-devices {
+                width: 50%;
+               padding-bottom: 0;
+               padding-right:2em;
+            }
+            & img{
+                width: 100%;
+    
+                max-width: 230px;
+                border-radius: 6px;
+                @include mixins.medium-devices {
+                    max-width: 300px;
+        
+                 }
+            };
+            &--order{
+                @include mixins.medium-devices {
+                    order: 1;
+        
+                 }
+            }
+		}
+		&-text {
+            padding: 1em;
+            & h3{
+                font-size: 2rem;
+                margin-bottom: 1em;
+            }
+            @include mixins.medium-devices {
+                width: 50%;
+    
+             }
+            
+		}
+       
+	}
+}

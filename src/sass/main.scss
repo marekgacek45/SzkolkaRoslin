@@ -1,0 +1,62 @@
+@use 'utilities/colors.scss';
+
+@use 'components/hamburger.scss';
+@use 'components/button.scss';
+@use 'components/widget.scss';
+@use 'components/navigation.scss';
+@use 'components/footer.scss';
+@use 'components/scrollbar.scss';
+
+
+
+@use 'pages/header.scss';
+@use 'pages/contact.scss';
+@use 'pages/about.scss';
+@use 'pages/offer.scss';
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    font-family:  'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+body{
+    background-color: colors.$bgc;
+}
+   
+h1,h2,h3,h4 {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+}
+
+.heading{
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+}
+
+.section{
+    padding: 2em;
+    text-align: center;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding:2em;
+    &--second{
+        max-width: 900px;
+    }
+}
+

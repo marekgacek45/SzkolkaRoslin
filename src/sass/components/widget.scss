@@ -1,0 +1,35 @@
+@use '../utilities/colors';
+@import '../utilities/mixins';
+
+.widget {
+    position: absolute;
+    position: fixed;
+    top: 20%;
+    right: -180px;
+    transition: all 0.6s;
+    display: flex;
+    background-color: colors.$action;
+    opacity: .6;
+
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 100000;
+    &__left{
+        height: 100%;
+        width: 100%;
+        padding: .5em;
+
+        &-icon{
+            font-size: 1.4rem;
+            @include large-devices {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.widget:hover {
+    right: 0;
+    opacity: 1;
+}
+
